@@ -137,6 +137,8 @@ $APPLICATION->IncludeComponent("bitrix:search.form", "flat", Array(
 					</div>
 				</div>
 
+                    <?$APPLICATION->ShowProperty('text-from-component')?>
+
 				<div class="information-block">
 					<div class="top"></div>
 					<div class="information-block-inner">

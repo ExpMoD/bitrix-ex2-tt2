@@ -89,6 +89,8 @@ if ($USER->IsAuthorized()) {
 
             $APPLICATION->SetTitle('Количество – ' . $arResult['COUNT']);
 
+            $this->setResultCacheKeys(array('COUNT'));
+
             $this->IncludeComponentTemplate();
         }
     } else {
