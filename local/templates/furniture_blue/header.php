@@ -139,6 +139,27 @@ $APPLICATION->IncludeComponent("bitrix:search.form", "flat", Array(
 
                     <?$APPLICATION->ShowProperty('text-from-component')?>
 
+                <div class="content-block">
+                    <div class="content-block-inner">
+                        <h3><?=GetMessage('CFT_LANG_CANGE')?></h3>
+                        <?$APPLICATION->IncludeComponent(
+	"bitrix:main.site.selector", 
+	"template1", 
+	array(
+		"COMPONENT_TEMPLATE" => "template1",
+		"SITE_LIST" => array(
+			0 => "EN",
+			1 => "s1",
+		),
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "3600"
+	),
+	false
+);?>
+                    </div>
+                </div>
+
+
 				<div class="information-block">
 					<div class="top"></div>
 					<div class="information-block-inner">
