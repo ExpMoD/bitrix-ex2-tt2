@@ -43,7 +43,7 @@ $APPLICATION->SetTitle("Furniture company");
 		"IBLOCK_ID" => "1",
 		"IBLOCK_TYPE" => "news",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
-		"LIST_ACTIVE_DATE_FORMAT" => "m.d.Y",
+		"LIST_ACTIVE_DATE_FORMAT" => "SHORT",
 		"LIST_FIELD_CODE" => array(
 			0 => "",
 			1 => "",
