@@ -4,7 +4,7 @@
 if ($arParams['IBLOCK_ID_CANONICAL'] && CModule::IncludeModule('iblock')) {
     $arFilter = array(
         "IBLOCK_ID" => $arParams['IBLOCK_ID_CANONICAL'],
-        "PROPERTY_NEWS.ID" => $arParams['ELEMENT_ID']
+        "PROPERTY_NEWS" => $arParams['ELEMENT_ID']
     );
 
     $canonical = CIBlockElement::GetList(array(), $arFilter);
